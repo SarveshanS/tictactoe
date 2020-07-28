@@ -33,8 +33,11 @@ while play:
     print("Current Player = " + current_player)
     player_details = ticTacToe.get_player_Info(current_player)
     current_player = player_details[0]
-    print(f"Player {current_player}: Enter a number between 1 and 9:")
-    input_location = int(input())
+    input_location=0
+    numbers=['1','2','3','4','5','6','7','8','9']
+    while input_location not in numbers:
+        input_location=input(f"Player {current_player}: Enter a number between 1 and 9:")
+    input_location = int(input_location)
 
     #Inserting 'X' or 'O' into the desired location
     marker = player_details[1];
