@@ -38,6 +38,7 @@ while play:
     while input_location not in numbers:
         input_location=input(f"Player {current_player}: Enter a number between 1 and 9:")
     input_location = int(input_location)
+    #This part of the code keeps printing the same message if the player didn't choose a number between the given interval.
     while input_location not in range(1,10):
         print (f"Player {current_player}: Enter a number between 1 and 9:")
         input_location = int(input())
