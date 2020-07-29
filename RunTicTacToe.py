@@ -33,11 +33,8 @@ while play:
     print("Current Player = " + current_player)
     player_details = ticTacToe.get_player_Info(current_player)
     current_player = player_details[0]
-    input_location=0
-    numbers=['1','2','3','4','5','6','7','8','9']
-    while input_location not in numbers:
-        input_location=input(f"Player {current_player}: Enter a number between 1 and 9:")
-    input_location = int(input_location)
+    print(f"Player {current_player}: Enter a number between 1 and 9:")
+    input_location = int(input())
     #This part of the code keeps printing the same message if the player didn't choose a number between the given interval.
     while input_location not in range(1,10):
         print (f"Player {current_player}: Enter a number between 1 and 9:")
