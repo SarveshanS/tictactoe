@@ -38,8 +38,10 @@ while play:
     while input_location not in numbers:
         input_location=input(f"Player {current_player}: Enter a number between 1 and 9:")
     input_location = int(input_location)
-#     print(f"Player {current_player}: Enter a number between 1 and 9:")
-#     input_location = int(input())
+    while input_location not in range(1,10):
+        print (f"Player {current_player}: Enter a number between 1 and 9:")
+        input_location = int(input())
+        continue
     
     #Inserting 'X' or 'O' into the desired location
     marker = player_details[1];
