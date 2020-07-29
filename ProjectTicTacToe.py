@@ -66,7 +66,7 @@ class TicTacToe:
         print("Would you like to play again?")
         play_again = input()
     
-        if play_again.upper() == 'Y':
+        if play_again.upper().startswith('Y') == True:
             for z in self.board:
                 self.board[z] = ' '
             return True
